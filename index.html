@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <div id="page">
+            <div id="login">
+                <h1 align="center">Login</h1>
+                <form id="login_frm" autocomplete="off">
+                    <input type="email" id="login_email" required="required" placeholder="Email Id">
+                    <small id="login_email_warning">Email id not registered...</small>
+                    <input type="password" id="login_password" required="required" placeholder="Password">
+                    <small id="login_password_warning">Wrong password...</small>
+                    <button type="submit" id="login_btn">Login</button>
+                </form>
+                <p align="center">Don't have an account? <span id="signup_link">Sign up</span></p>
+            </div>
+            <div id="signup">
+                <h1 align="center">Sign up</h1>
+                <form id="signup_frm" autocomplete="off">
+                    <input type="name" placeholder="Name" required="required" id="username">
+                    <input type="email" placeholder="Email Id" required="required" id="email">
+                    <small id="email_notice">Email is already registered...</small>
+                    <input type="number" placeholder="Phone" required="required" id="phone">
+                    <input type="password" placeholder="Password" required="required" id="password">
+                    <button type="submit" id="signup_btn">Sign up</button>
+
+                </form>
+                <p align="center">Already have an account? <span id="login_link">Login</span></p>
+
+            </div>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+    <script src="js/login_signup.js"></script>
+
+    
+</body>
+
+</html>
